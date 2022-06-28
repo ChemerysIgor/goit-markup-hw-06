@@ -859,6 +859,28 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    outline: transparent;
+    transition-property: border-color;
+    cursor;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-close-btn:hover .close-icon,
+.modal-close-btn:focus .close-icon {
+    fill: var(--link-color);
+}
+
+.modal-close-btn:hover,
+.modal-close-btn:focus {
+    cursor: pointer;
+    border-color: var(--link-color);
+}
+
+.close-icon {
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .is-hidden {
@@ -937,6 +959,7 @@ body {
     padding: 12px 16px 12px 16px;
     margin-top: 4px;
     outline: transparent;
+    border: 1px solid rgba(33, 33, 33, 0.2);
     transition-property: border-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -978,6 +1001,9 @@ body {
 .agreement-field {
     margin-top: 20px;
     margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .user-agreement {
@@ -1023,6 +1049,7 @@ body {
     background: #188ce8;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+    border: none;
     padding: 10px 55px 10px 55px;
     font-family: "Roboto";
     font-weight: 700;
